@@ -1,0 +1,29 @@
+{
+  "name": "@lyonkit/landing",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "nuxi dev",
+    "prepare": "nuxi prepare",
+    "build": "nuxi build",
+    "typecheck": "nuxi typecheck",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@lyonkit/bloks": "workspace:*",
+    "@headlessui/vue": "1.6.1",
+    "@iconify/json": "2.1.44",
+    "@types/lodash-es": "4.17.6",
+    "@unocss/nuxt": "0.33.5",
+    "@vueuse/nuxt": "8.5.0",
+    "lodash-es": "4.17.21",
+    "nuxt": "3.0.0-rc.3",
+    "vite": "2.9.9",
+    "vitest": "0.12.6",
+    "vue": "3.2.33",
+    "webpack": "5.72.1"
+  }
+}
