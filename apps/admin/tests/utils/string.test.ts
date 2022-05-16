@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { longestCommonPrefix } from './string'
+import { longestCommonPrefix } from '~/utils/string'
 
 describe('string utils', () => {
   describe('longestCommonPrefix', () => {

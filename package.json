@@ -1,10 +1,10 @@
 {
   "name": "@lyonkit/monorepo",
-  "description": "Monorepo starter that feature page building CMS",
-  "author": "Léo Coletta <leo.coletta@pm.me>",
+  "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@7.1.0",
-  "type": "module",
+  "description": "Monorepo starter that feature page building CMS",
+  "author": "Léo Coletta <leo.coletta@pm.me>",
   "volta": {
     "node": "16.15.0",
     "npm": "8.10.0"
@@ -12,7 +12,10 @@
   "scripts": {
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
-    "dev": "pnpm -r run prepare && pnpm --parallel -r run dev"
+    "typecheck": "pnpm -r run typecheck",
+    "dev": "pnpm -r run prepare && pnpm --parallel -r run dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.23.1",

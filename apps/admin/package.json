@@ -10,12 +10,12 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "codegen": "graphql-codegen --config codegen.yml",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "devDependencies": {
-    "@lyonkit/bloks": "workspace:*",
     "@headlessui/vue": "1.6.1",
     "@iconify/json": "2.1.44",
+    "@lyonkit/bloks": "workspace:*",
     "@types/lodash-es": "4.17.6",
     "@unocss/nuxt": "0.33.5",
     "@vueuse/nuxt": "8.5.0",
