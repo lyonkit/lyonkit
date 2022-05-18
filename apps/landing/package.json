@@ -11,7 +11,7 @@
     "nuxt": "3.0.0-rc.3"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.45",
+    "@iconify/json": "2.1.46",
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.33.5",
     "vite": "2.9.9",
