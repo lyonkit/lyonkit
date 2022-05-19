@@ -20,7 +20,7 @@
     "test": "vitest run"
   },
   "peerDependencies": {
-    "vue": "^3.2.33"
+    "vue": "^3.2.34"
   },
   "peerDependenciesMeta": {
     "vue": {
@@ -35,7 +35,7 @@
     "vite": "2.9.9",
     "vite-plugin-dts": "1.1.1",
     "vitest": "0.12.6",
-    "vue": "3.2.33",
+    "vue": "3.2.34",
     "vue-tsc": "0.34.15"
   }
 }
