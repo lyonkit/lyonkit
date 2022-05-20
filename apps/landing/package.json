@@ -13,7 +13,7 @@
   "devDependencies": {
     "@iconify/json": "2.1.46",
     "@lyonkit/bloks": "workspace:*",
-    "@unocss/nuxt": "0.33.5",
+    "@unocss/nuxt": "0.34.0",
     "vite": "2.9.9",
     "webpack": "5.72.1"
   }

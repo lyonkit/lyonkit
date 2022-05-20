@@ -13,11 +13,11 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@headlessui/vue": "1.6.1",
+    "@headlessui/vue": "1.6.2",
     "@iconify/json": "2.1.46",
     "@lyonkit/bloks": "workspace:*",
     "@types/lodash-es": "4.17.6",
-    "@unocss/nuxt": "0.33.5",
+    "@unocss/nuxt": "0.34.0",
     "@vueuse/nuxt": "8.5.0",
     "lodash-es": "4.17.21",
     "nuxt": "3.0.0-rc.3",
