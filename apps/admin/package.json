@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@headlessui/vue": "1.6.4",
-    "@iconify/json": "2.1.55",
+    "@iconify/json": "2.1.56",
     "@lyonkit/bloks": "workspace:*",
     "@types/lodash-es": "4.17.6",
-    "@unocss/nuxt": "0.37.2",
+    "@unocss/nuxt": "0.37.4",
     "@vueuse/nuxt": "8.6.0",
     "lodash-es": "4.17.21",
     "nuxt": "3.0.0-rc.3",
