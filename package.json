@@ -2,7 +2,7 @@
   "name": "@lyonkit/monorepo",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@7.1.8",
+  "packageManager": "pnpm@7.1.9",
   "description": "Monorepo starter that feature page building CMS",
   "author": "Léo Coletta <leo.coletta@pm.me>",
   "volta": {
