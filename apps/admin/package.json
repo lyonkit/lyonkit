@@ -14,16 +14,16 @@
   },
   "devDependencies": {
     "@headlessui/vue": "1.6.4",
-    "@iconify/json": "2.1.56",
+    "@iconify/json": "2.1.57",
     "@lyonkit/bloks": "workspace:*",
     "@types/lodash-es": "4.17.6",
-    "@unocss/nuxt": "0.37.4",
+    "@unocss/nuxt": "0.38.1",
     "@vueuse/nuxt": "8.6.0",
     "lodash-es": "4.17.21",
     "nuxt": "3.0.0-rc.3",
-    "vite": "2.9.9",
-    "vitest": "0.14.0",
-    "vue": "3.2.36",
+    "vite": "2.9.10",
+    "vitest": "0.14.1",
+    "vue": "3.2.37",
     "webpack": "5.73.0"
   }
 }
