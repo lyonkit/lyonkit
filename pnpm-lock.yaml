@@ -19,7 +19,7 @@ importers:
   apps/admin:
     specifiers:
       '@headlessui/vue': 1.6.4
-      '@iconify/json': 2.1.57
+      '@iconify/json': 2.1.58
       '@lyonkit/bloks': workspace:*
       '@types/lodash-es': 4.17.6
       '@unocss/nuxt': 0.38.1
@@ -32,7 +32,7 @@ importers:
       webpack: 5.73.0
     devDependencies:
       '@headlessui/vue': 1.6.4_vue@3.2.37
-      '@iconify/json': 2.1.57
+      '@iconify/json': 2.1.58
       '@lyonkit/bloks': link:../../packages/bloks
       '@types/lodash-es': 4.17.6
       '@unocss/nuxt': 0.38.1_hbnwtgvcpeey3x7ht6akeocwam
@@ -46,7 +46,7 @@ importers:
 
   apps/landing:
     specifiers:
-      '@iconify/json': 2.1.57
+      '@iconify/json': 2.1.58
       '@lyonkit/bloks': workspace:*
       '@unocss/nuxt': 0.38.1
       nuxt: 3.0.0-rc.3
@@ -55,7 +55,7 @@ importers:
     dependencies:
       nuxt: 3.0.0-rc.3_vite@2.9.10+webpack@5.73.0
     devDependencies:
-      '@iconify/json': 2.1.57
+      '@iconify/json': 2.1.58
       '@lyonkit/bloks': link:../../packages/bloks
       '@unocss/nuxt': 0.38.1_vite@2.9.10+webpack@5.73.0
       vite: 2.9.10
@@ -511,8 +511,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.57:
-    resolution: {integrity: sha512-l/X8rc5ksvYSwOKPICNPy8l033hZQugdvB4OeGLrTZ40iVmp1Lg0NEsOZpY6Glk8S7spzO8YWXCCxS//4idM7A==}
+  /@iconify/json/2.1.58:
+    resolution: {integrity: sha512-fyxykayet7Fu4J5NIfmMO58q2bWhCkL5HKKCmb1pEiWyaHPqrkfy9LgWDooKOWEFy07FhwQAd3pqT+B/RICPVQ==}
     dependencies:
       '@iconify/types': 1.1.0
       pathe: 0.2.0
