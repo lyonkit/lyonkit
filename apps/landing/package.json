@@ -8,12 +8,12 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.4"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.59",
+    "@iconify/json": "2.1.61",
     "@lyonkit/bloks": "workspace:*",
-    "@unocss/nuxt": "0.38.2",
+    "@unocss/nuxt": "0.39.0",
     "vite": "2.9.12",
     "webpack": "5.73.0"
   }
