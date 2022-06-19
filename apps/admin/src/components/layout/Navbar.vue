@@ -1,11 +1,13 @@
 <script setup lang="ts">
 const { defineMenuLinks, defineMenuGroup, defineMenuCollection } = useMenuUtils()
 
+const lyonkit = useLyonkit()
+
 const links = defineMenuLinks([
   defineMenuGroup({
     title: 'Dashboard',
     items: [
-      { title: 'Accueil', to: '/dashboard' },
+      { title: 'Accueil', to: '/dashboard', icon: 'i-mdi:home' },
     ],
     icon: 'i-ic:round-space-dashboard',
   }),
@@ -13,14 +15,31 @@ const links = defineMenuLinks([
     title: 'Contenue',
     collection: [
       defineMenuGroup({
-        title: 'Textes',
+        title: 'Pages',
         icon: 'i-mdi:text',
-        commonPath: '/content/text',
+        commonPath: '/content/pages',
         items: [
           {
-            to: '/content/text/fr',
-            title: 'FR',
-            icon: 'i-twemoji:flag-france',
+            to: '/content/pages/list',
+            title: 'Toutes les pages',
+            icon: 'i-mdi:page-layout-header-footer',
+          },
+          {
+            to: '/content/pages/create',
+            title: 'Créer une page',
+            icon: 'i-mdi:add',
+          },
+        ],
+      }),
+      defineMenuGroup({
+        title: 'Interface',
+        icon: 'i-fluent:draw-image-20-filled',
+        commonPath: '/content/bloks',
+        items: [
+          {
+            to: '/content/bloks/explorer',
+            title: 'Explorer',
+            icon: 'i-material-symbols:explore',
           },
         ],
       }),
@@ -35,7 +54,7 @@ const menuComponents = {
 </script>
 
 <template>
-  <aside class="w-60 bg-primary text-white">
+  <aside class="bg-primary text-white">
     <NuxtLink to="/" class="flex gap-1 p-2 items-center bg-primary-600 rounded-b-xl shadow">
       <div class="i-eos-icons:admin w-10 h-10 m-2" />
       <div class="text-xl">

@@ -2,10 +2,10 @@
   "name": "@lyonkit/landing",
   "version": "0.1.0",
   "scripts": {
-    "prepare": "nuxi prepare",
-    "build": "nuxi build",
-    "dev": "nuxi dev",
-    "typecheck": "nuxi typecheck"
+    "prepare": "nuxt prepare",
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 1211",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "nuxt": "3.0.0-rc.4"
@@ -15,6 +15,7 @@
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.39.3",
     "vite": "2.9.12",
-    "webpack": "5.73.0"
+    "webpack": "5.73.0",
+    "@leo91000/lyonkit-client": "1.1.5"
   }
 }

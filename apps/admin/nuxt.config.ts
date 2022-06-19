@@ -15,5 +15,11 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
+    '@lyonkit/nuxt',
   ],
+  runtimeConfig: {
+    public: {
+      lyonkitApiKey: '',
+    },
+  },
 })
