@@ -7,7 +7,6 @@ import {
   resolveModule,
 } from '@nuxt/kit'
 import { name, version } from '../package.json'
-export { BlokInput, BlokOutput, ImageInput, ImageOutput, PageInput, PageOutput, PageOutputWithBloks } from '@leo91000/lyonkit-client'
 
 export interface ModuleOptions {
   /**
