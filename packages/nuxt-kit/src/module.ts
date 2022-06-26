@@ -46,12 +46,14 @@ export default defineNuxtModule<ModuleOptions>({
       `,
     }).dst!
 
-    if (opts.readOnly)
-      addPlugin(resolveRuntimeModule('./ro-plugin'))
-    else
-      addPlugin(resolveRuntimeModule('./plugin'))
-
-    addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./composables') })
+    if (opts.readOnly) {
+      addPlugin(resolveRuntimeModule('./read/plugin'))
+      addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./read/composables') })
+    }
+    else {
+      addPlugin(resolveRuntimeModule('./write/plugin'))
+      addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./write/composables') })
+    }
 
     nuxt.options.css.push('@lyonkit/bloks/assets/style.css')
   },
