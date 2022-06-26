@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { mdiClose, mdiTrashCan } from '@mdi/js'
+import type { PageOutput } from '@leo91000/lyonkit-client'
 
 const props = defineProps<{
   pageId: number
 }>()
 
 const emit = defineEmits<{
-  (event: 'delete', value: number): void
+  (event: 'delete', value: PageOutput): void
 }>()
 
 const router = useRouter()

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { mdiClose, mdiPencil, mdiPlus } from '@mdi/js'
+import { mdiPlus } from '@mdi/js'
 import type { PageOutput } from '@leo91000/lyonkit-client'
 
 const router = useRouter()
@@ -26,21 +26,9 @@ const { isLoading, state: page, execute: refreshPage } = useAsyncState(() => lyo
   },
 })
 
-const update = reactive({
-  showModal: false,
-  page: null as PageOutput | null,
-})
-function openUpdateModal(page: PageOutput) {
-  update.page = page
-  update.showModal = true
-}
-function closeUpdateModal() {
-  update.showModal = false
-}
-
 async function onPageUpdated(page: PageOutput) {
-  closeUpdateModal()
   const promises: Promise<any>[] = [fetchPages()]
+
   const pagePath = `/pages/i${page.path}`
   if (route.path !== pagePath)
     router.push(pagePath)
@@ -53,30 +41,7 @@ async function onPageUpdated(page: PageOutput) {
 
 <template>
   <VContainer>
-    <VDialog v-model="update.showModal">
-      <VCard class="pa-3">
-        <VCardTitle class="d-flex flew-row items-center justify-space-between mb-2">
-          <div>Mise à jour des métadonnées de la page</div>
-          <VBtn
-            variant="flat"
-            size="small"
-            :icon="mdiClose"
-            @click="closeUpdateModal()"
-          />
-        </VCardTitle>
-        <FormUpdatePage
-          v-if="update.page"
-          class="ma-4"
-          :page="update.page"
-          @updated="onPageUpdated"
-        />
-        <div v-else>
-          Render error
-        </div>
-      </VCard>
-    </VDialog>
-
-    <div v-if="isLoading">
+    <div v-if="!page || isLoading">
       Loading...
     </div>
     <VCard
@@ -94,14 +59,10 @@ async function onPageUpdated(page: PageOutput) {
         {{ page?.description }}
       </p>
       <div class="d-flex flex-row items-center justify-center my-4">
-        <VBtn
-          :prepend-icon="mdiPencil"
-          color="info"
-          class="mr-2"
-          @click="openUpdateModal(page)"
-        >
-          Modifier
-        </VBtn>
+        <BtnUpdatePage
+          :page="page"
+          @updated="onPageUpdated"
+        />
 
         <BtnRemovePage :page-id="page.id" />
       </div>
