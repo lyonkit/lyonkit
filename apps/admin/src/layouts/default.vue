@@ -7,13 +7,7 @@ const toggleDrawer = useToggle(drawer)
 const { openToast } = useToast()
 const lyonkit = useLyonkit()
 
-const { state: pages, isLoading } = useAsyncState(() => lyonkit.listPages(), [], {
-  immediate: true,
-  onError(e) {
-    console.error('An error occured while listing pages', e)
-    openToast({ message: 'Une erreur est survenue lors de la récupération de la liste des pages', type: 'error' })
-  },
-})
+const { pages, loading } = usePageList()
 
 const menu = computed(() => [
   {
@@ -50,7 +44,7 @@ const menu = computed(() => [
       <VAppBarTitle>Administration</VAppBarTitle>
     </VAppBar>
     <VNavigationDrawer v-model="drawer">
-      <p v-if="isLoading">
+      <p v-if="loading">
         Loading...
       </p>
       <VList v-else>

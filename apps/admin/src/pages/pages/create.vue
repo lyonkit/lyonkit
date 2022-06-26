@@ -2,9 +2,11 @@
 import type { PageOutput } from '@leo91000/lyonkit-client'
 
 const router = useRouter()
+const { fetchPages } = usePageList()
 
-function onPageCreated(page: PageOutput) {
+async function onPageCreated(page: PageOutput) {
   router.push(`/pages/i${page.path}`)
+  await fetchPages()
 }
 </script>
 
