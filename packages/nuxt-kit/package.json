@@ -22,13 +22,13 @@
     "@nuxt/kit": "3.0.0-rc.4"
   },
   "peerDependencies": {
-    "@leo91000/lyonkit-client": "^1.2.1",
+    "@leo91000/lyonkit-client": "^1.2.2",
     "@lyonkit/bloks": "workspace:*"
   },
   "devDependencies": {
     "@nuxt/module-builder": "0.1.7",
     "@nuxt/schema": "3.0.0-rc.4",
     "@lyonkit/bloks": "workspace:*",
-    "@leo91000/lyonkit-client": "^1.2.1"
+    "@leo91000/lyonkit-client": "^1.2.2"
   }
 }
