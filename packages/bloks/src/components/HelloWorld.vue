@@ -9,8 +9,14 @@ withDefaults(defineProps<{
 <template>
   <component
     :is="`h${size}`"
-    class="text-purple-400"
+    class="purple"
   >
     Hello World !
   </component>
 </template>
+
+<style scoped>
+.purple {
+  color: #9c27b0;
+}
+</style>

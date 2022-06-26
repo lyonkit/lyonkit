@@ -1,24 +1,17 @@
-@import '@unocss/reset/tailwind.css';
+@import './fonts.css';
+
+* {
+  font-family: 'Roboto Condensed', 'Montserrat', sans-serif;
+}
 
 .page-enter-from{
-  @apply opacity-0 translate-y-4;
+  opacity: 0;
+  transform: translateY(4rem);
 }
 .page-enter-active, .page-leave-active {
-  @apply transition-all duration-500;
+  transition: opacity .5s, transform .5s;
 }
 .page-enter, .page-leave-to {
-  @apply opacity-0 -translate-y-4;
-}
-
-.line-after {
-  @apply flex items-center;
-}
-
-.line-after::after {
-  content: '';
-  @apply flex-auto ml-4 h-[1px] bg-primary-600;
-}
-
-ul:not(.custom) {
-  @apply list-disc list-inside pl-6;
+  opacity: 0;
+  transform: translateY(-4rem);
 }

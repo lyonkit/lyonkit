@@ -4,7 +4,7 @@
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
-    "dev": "nuxt dev --port 1211",
+    "dev": "nuxt dev --port 1211 --host localhost",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
@@ -16,6 +16,6 @@
     "@unocss/nuxt": "0.39.3",
     "vite": "2.9.12",
     "webpack": "5.73.0",
-    "@leo91000/lyonkit-client": "1.1.5"
+    "@leo91000/lyonkit-client": "1.2.1"
   }
 }

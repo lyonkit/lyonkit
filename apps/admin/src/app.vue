@@ -1,6 +1,7 @@
 <template>
-  <div class="font-poppins">
-    <NuxtLayout>
+  <div>
+    <Toast />
+    <NuxtLayout class="h-screen">
       <NuxtPage />
     </NuxtLayout>
   </div>

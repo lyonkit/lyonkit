@@ -1,5 +1,5 @@
 import type { Props } from '../types'
-import Component from './HelloWorld.vue'
+import { defineBlokComponent } from '../utils'
 
 export const HelloWorldId = '#hello-world'
 
@@ -13,5 +13,5 @@ export const HelloWorldMeta = {
       default: 1,
     },
   },
-  component: Component,
+  component: defineBlokComponent(() => import('./HelloWorld.vue')),
 }

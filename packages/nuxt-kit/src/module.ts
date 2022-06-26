@@ -1,5 +1,13 @@
-import { addAutoImport, addPlugin, addTemplate, createResolver, defineNuxtModule, resolveModule } from '@nuxt/kit'
+import {
+  addAutoImport,
+  addPlugin,
+  addTemplate,
+  createResolver,
+  defineNuxtModule,
+  resolveModule,
+} from '@nuxt/kit'
 import { name, version } from '../package.json'
+export { BlokInput, BlokOutput, ImageInput, ImageOutput, PageInput, PageOutput, PageOutputWithBloks } from '@leo91000/lyonkit-client'
 
 export interface ModuleOptions {
   /**
@@ -33,9 +41,10 @@ export default defineNuxtModule<ModuleOptions>({
     // Inject options via virtual template
     nuxt.options.alias['#lyonkit-options'] = addTemplate({
       filename: 'lyonkit-options.mjs',
-      getContents: () => Object.entries(opts).map(([key, value]) =>
-        `export const ${key} = ${JSON.stringify(value, null, 2)}
-      `).join('\n'),
+      getContents: () => `
+        export const apiKey = ${JSON.stringify(opts.apiKey ?? null, null, 2)}
+        export const readOnly = ${JSON.stringify(opts.readOnly ?? false, null, 2)}
+      `,
     }).dst!
 
     if (opts.readOnly)
@@ -44,5 +53,7 @@ export default defineNuxtModule<ModuleOptions>({
       addPlugin(resolveRuntimeModule('./plugin'))
 
     addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./composables') })
+
+    nuxt.options.css.push('@lyonkit/bloks/assets/style.css')
   },
 })

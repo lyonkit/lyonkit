@@ -13,9 +13,13 @@
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "typecheck": "pnpm -r run typecheck",
-    "dev": "pnpm -r run prepare && pnpm --parallel -r run dev",
+    "dev": "pnpm --parallel -r run prepare && pnpm --parallel -r run dev",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "@admin": "pnpm --filter @lyonkit/admin",
+    "@landing": "pnpm --filter @lyonkit/landing",
+    "@nuxt-kit": "pnpm --filter @lyonkit/nuxt",
+    "@bloks": "pnpm --filter @lyonkit/bloks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.1",

@@ -10,16 +10,26 @@ export default defineNuxtConfig({
       { name: 'googlebot', content: 'noindex' },
     ],
   },
-  css: ['assets/css/main.css'],
+  lyonkit: {
+    readOnly: false,
+  },
+  css: ['assets/css/main.css', 'vuetify/lib/styles/main.sass'],
   ssr: false,
-  modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@lyonkit/nuxt',
-  ],
   runtimeConfig: {
     public: {
       lyonkitApiKey: '',
+    },
+  },
+  modules: [
+    '@vueuse/nuxt',
+    '@lyonkit/nuxt',
+  ],
+  build: {
+    transpile: ['vuetify'],
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': false,
     },
   },
 })
