@@ -9,7 +9,9 @@ export function usePageList() {
   const { openToast } = useToast()
 
   async function fetchPages() {
-    loading.value = true
+    loading.value = !firstFetch
+    if (!firstFetch)
+      firstFetch = true
     try {
       pages.value = await lyonkit.listPages()
     }
@@ -25,10 +27,8 @@ export function usePageList() {
     }
   }
 
-  if (!firstFetch) {
-    firstFetch = true
+  if (!firstFetch)
     fetchPages()
-  }
 
   return {
     fetchPages,

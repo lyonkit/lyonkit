@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { mdiClose, mdiPencil, mdiTrashCan } from '@mdi/js'
+import { mdiClose, mdiPencil, mdiPlus, mdiTrashCan } from '@mdi/js'
 import type { PageOutput } from '@leo91000/lyonkit-client'
 
 const router = useRouter()
@@ -49,6 +49,40 @@ async function onPageUpdated(page: PageOutput) {
 
   await Promise.all(promises)
 }
+
+const remove = reactive({
+  showModal: false,
+  page: null as PageOutput | null,
+  loading: false,
+})
+function openRemoveModal(page: PageOutput) {
+  remove.page = page
+  remove.showModal = true
+}
+function closeRemoveModal() {
+  remove.showModal = false
+}
+async function removePage() {
+  if (remove.loading || !remove.page)
+    return
+
+  remove.loading = true
+  try {
+    await lyonkit.deletePage(remove.page.id)
+    router.push('/dashboard')
+    await fetchPages()
+  }
+  catch (e) {
+    console.error('An error occurred while removing page', e)
+    openToast({
+      type: 'error',
+      message: 'Une erreur est survenue lors de la suppression de la page',
+    })
+  }
+  finally {
+    remove.loading = false
+  }
+}
 </script>
 
 <template>
@@ -76,10 +110,49 @@ async function onPageUpdated(page: PageOutput) {
       </VCard>
     </VDialog>
 
+    <VDialog v-model="remove.showModal">
+      <VCard
+        v-if="remove.page"
+        class="ma-4"
+        :page="remove.page"
+      >
+        <VCardTitle class="d-flex flex-row items_center justify-space-between">
+          <div>Êtes-vous sûre de vouloir supprimer la page ?</div>
+          <VBtn
+            variant="flat"
+            size="small"
+            :icon="mdiClose"
+            @click="closeRemoveModal()"
+          />
+        </VCardTitle>
+
+        <VCardActions class="d-flex flex-row items-center justify-space-between">
+          <VBtn
+            color="error"
+            :disabled="remove.loading"
+            :loading="remove.loading"
+            @click="removePage()"
+          >
+            Oui
+          </VBtn>
+          <VBtn :disabled="remove.loading" @click="closeRemoveModal()">
+            Non
+          </VBtn>
+        </VCardActions>
+      </VCard>
+      <div v-else>
+        Render error
+      </div>
+    </VDialog>
+
     <div v-if="isLoading">
       Loading...
     </div>
-    <VCard v-else class="pa-4">
+    <VCard
+      v-else
+      class="pa-4"
+      elevation="2"
+    >
       <h2 class="text-center text-h5 text-grey">
         {{ path }}
       </h2>
@@ -98,10 +171,24 @@ async function onPageUpdated(page: PageOutput) {
         >
           Modifier
         </VBtn>
-        <VBtn :prepend-icon="mdiTrashCan" color="error">
+        <VBtn
+          :prepend-icon="mdiTrashCan"
+          color="error"
+          @click="openRemoveModal(page)"
+        >
           Supprimer
         </VBtn>
       </div>
     </VCard>
+
+    <VRow
+      align="center"
+      justify="center"
+      class="mt-4"
+    >
+      <VBtn :prepend-icon="mdiPlus">
+        Ajouter un blok
+      </VBtn>
+    </VRow>
   </VContainer>
 </template>
