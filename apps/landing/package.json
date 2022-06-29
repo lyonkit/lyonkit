@@ -14,7 +14,7 @@
     "@iconify/json": "2.1.69",
     "@leo91000/lyonkit-client": "1.2.2",
     "@lyonkit/bloks": "workspace:*",
-    "@unocss/nuxt": "0.41.1",
+    "@unocss/nuxt": "0.41.2",
     "vite": "2.9.13",
     "webpack": "5.73.0"
   }
