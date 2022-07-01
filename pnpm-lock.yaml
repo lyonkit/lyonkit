@@ -32,7 +32,7 @@ importers:
       vite: 2.9.13
       vitest: 0.16.0
       vue: 3.2.37
-      vuetify: 3.0.0-beta.4
+      vuetify: 3.0.0-beta.5
       webpack: 5.73.0
     devDependencies:
       '@headlessui/vue': 1.6.5_vue@3.2.37
@@ -49,7 +49,7 @@ importers:
       vite: 2.9.13_sass@1.53.0
       vitest: 0.16.0_sass@1.53.0
       vue: 3.2.37
-      vuetify: 3.0.0-beta.4_vue@3.2.37
+      vuetify: 3.0.0-beta.5_vue@3.2.37
       webpack: 5.73.0
 
   apps/landing:
@@ -7573,8 +7573,8 @@ packages:
       '@vue/server-renderer': 3.2.37_vue@3.2.37
       '@vue/shared': 3.2.37
 
-  /vuetify/3.0.0-beta.4_vue@3.2.37:
-    resolution: {integrity: sha512-saq44U5bDO5z7BNWVeBdyY37BTPOQTeuz7Tm3kyywMEDHhZKw9BhtCo/QodTndoofRSRWXfE7MI2/AEvG/1x+g==}
+  /vuetify/3.0.0-beta.5_vue@3.2.37:
+    resolution: {integrity: sha512-mU+pO5ZAZOR2Z7eVBoPwZw6nePxT5Sdqpsa4++Q99TwVxXQ7jl76Cy97v72MkDYWfxjDjj8XvW6IqNPGrJpU8w==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       '@formatjs/intl': ^1.0.0 || ^2.0.0
