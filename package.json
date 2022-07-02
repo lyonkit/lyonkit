@@ -13,7 +13,7 @@
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "typecheck": "pnpm -r run typecheck",
-    "dev": "pnpm --parallel -r run prepare && pnpm --parallel -r run dev",
+    "dev": "pnpm -r run prepare && pnpm --parallel -r run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "@admin": "pnpm --filter @lyonkit/admin",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { mdiPlus } from '@mdi/js'
 import type { PageOutput } from '@leo91000/lyonkit-client'
+import { BloksRenderer } from '@lyonkit/bloks'
 
 const router = useRouter()
 const route = useRoute()
@@ -44,38 +44,42 @@ async function onPageUpdated(page: PageOutput) {
     <div v-if="!page || isLoading">
       Loading...
     </div>
-    <VCard
-      v-else
-      class="pa-4"
-      elevation="2"
-    >
-      <h2 class="text-center text-h5 text-grey">
-        {{ path }}
-      </h2>
-      <h1 class="text-center">
-        {{ page?.title }}
-      </h1>
-      <p class="text-center text-h6 font-italic">
-        {{ page?.description }}
-      </p>
-      <div class="d-flex flex-row items-center justify-center my-4">
-        <BtnUpdatePage
-          :page="page"
-          @updated="onPageUpdated"
-        />
 
-        <BtnRemovePage :page-id="page.id" />
-      </div>
-    </VCard>
+    <template v-else>
+      <VCard
+        class="pa-4"
+        elevation="2"
+      >
+        <h2 class="text-center text-h5 text-grey">
+          {{ path }}
+        </h2>
+        <h1 class="text-center">
+          {{ page?.title }}
+        </h1>
+        <p class="text-center text-h6 font-italic">
+          {{ page?.description }}
+        </p>
+        <div class="d-flex flex-row items-center justify-center my-4">
+          <BtnUpdatePage
+            :page="page"
+            @updated="onPageUpdated"
+          />
 
-    <VRow
-      align="center"
-      justify="center"
-      class="mt-4"
-    >
-      <VBtn :prepend-icon="mdiPlus">
-        Ajouter un blok
-      </VBtn>
-    </VRow>
+          <BtnRemovePage :page-id="page.id" />
+        </div>
+      </VCard>
+
+      <VRow
+        align="center"
+        justify="center"
+        class="mt-4 mb-8"
+      >
+        <BtnBlokSelect :page-id="page.id" @created="refreshPage()" />
+      </VRow>
+
+      <VRow>
+        <BloksRenderer :bloks="page.bloks" editor-mode />
+      </VRow>
+    </template>
   </VContainer>
 </template>
