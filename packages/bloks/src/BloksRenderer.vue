@@ -14,12 +14,12 @@ const props = withDefaults(defineProps<{
   editorMode: false,
 })
 
-const emit = defineEmits<{
-  (event: 'up', payload: number): void
-  (event: 'down', payload: number): void
-  (event: 'edit', payload: number): void
-  (event: 'delete', payload: number): void
-}>()
+defineEmits({
+  up: (payload: number) => true,
+  down: (payload: number) => true,
+  edit: (payload: number) => true,
+  delete: (payload: number) => true,
+})
 
 const selectedBlok = ref<number>()
 </script>
@@ -38,10 +38,10 @@ const selectedBlok = ref<number>()
         :class="$style.component"
       />
       <div v-if="editorMode" :class="$style.actions">
-        <button :class="$style.up" @click="emit('up', i)" />
-        <button :class="$style.down" @click="emit('down', i)" />
-        <button :class="$style.edit" @click="emit('edit', i)" />
-        <button :class="$style.delete" @click="emit('delete', i)" />
+        <button :class="$style.up" @click="$emit('up', i)" />
+        <button :class="$style.down" @click="$emit('down', i)" />
+        <button :class="$style.edit" @click="$emit('edit', i)" />
+        <button :class="$style.delete" @click="$emit('delete', i)" />
       </div>
     </div>
   </div>

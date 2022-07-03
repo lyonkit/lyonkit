@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PageOutput } from '@leo91000/lyonkit-client'
+import type { BlokOutput, PageOutput } from '@leo91000/lyonkit-client'
 import { BloksRenderer } from '@lyonkit/bloks'
 
 const router = useRouter()
@@ -36,6 +36,25 @@ async function onPageUpdated(page: PageOutput) {
     promises.push(refreshPage())
 
   await Promise.all(promises)
+}
+
+const editDialogParams = reactive({
+  dialog: false,
+  i: null as number | null,
+  blok: null as BlokOutput | null,
+})
+function openEditDialog(i: number) {
+  const blok = page.value?.bloks[i]
+  if (!blok)
+    return
+
+  editDialogParams.i = i
+  editDialogParams.blok = blok
+  editDialogParams.dialog = true
+}
+async function onBlokEdited() {
+  editDialogParams.dialog = false
+  refreshPage()
 }
 </script>
 
@@ -78,8 +97,20 @@ async function onPageUpdated(page: PageOutput) {
       </VRow>
 
       <VRow>
-        <BloksRenderer :bloks="page.bloks" editor-mode />
+        <BloksRenderer
+          :bloks="page.bloks"
+          editor-mode
+          @edit="openEditDialog"
+        />
       </VRow>
+
+      <VDialog v-model="editDialogParams.dialog">
+        <FormBlokSpecGenerator
+          :blok="editDialogParams.blok"
+          @close="editDialogParams.dialog = false"
+          @done="onBlokEdited()"
+        />
+      </VDialog>
     </template>
   </VContainer>
 </template>
