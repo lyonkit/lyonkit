@@ -40,8 +40,8 @@ async function onPageUpdated(page: PageOutput) {
 
 const editDialogParams = reactive({
   dialog: false,
-  i: null as number | null,
-  blok: null as BlokOutput | null,
+  i: 0,
+  blok: null as unknown as BlokOutput,
 })
 function openEditDialog(i: number) {
   const blok = page.value?.bloks[i]

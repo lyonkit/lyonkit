@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { ComponentsMap } from './index'
 
 interface BlokProps {
@@ -15,13 +15,21 @@ const props = withDefaults(defineProps<{
 })
 
 defineEmits({
-  up: (payload: number) => true,
-  down: (payload: number) => true,
-  edit: (payload: number) => true,
-  delete: (payload: number) => true,
+  up: (_payload: number) => true,
+  down: (_payload: number) => true,
+  edit: (_payload: number) => true,
+  delete: (_payload: number) => true,
 })
 
 const selectedBlok = ref<number>()
+
+function getComponent(componentId: string) {
+  const spec = ComponentsMap[componentId as keyof typeof ComponentsMap]
+  if (!spec)
+    throw new Error(`Unknown blok component ${componentId}`)
+
+  return spec.component
+}
 </script>
 
 <template>
@@ -33,7 +41,7 @@ const selectedBlok = ref<number>()
       @click="selectedBlok = i"
     >
       <component
-        :is="ComponentsMap[blok.componentId].component"
+        :is="getComponent(blok.componentId)"
         v-bind="blok.props"
         :class="$style.component"
       />
