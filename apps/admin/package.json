@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@headlessui/vue": "1.6.5",
-    "@iconify/json": "2.1.71",
+    "@iconify/json": "2.1.72",
     "@leo91000/lyonkit-client": "1.2.2",
     "@lyonkit/bloks": "workspace:*",
     "@lyonkit/nuxt": "workspace:*",
