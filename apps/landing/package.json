@@ -11,10 +11,10 @@
     "nuxt": "3.0.0-rc.4"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.72",
+    "@iconify/json": "2.1.73",
     "@leo91000/lyonkit-client": "1.2.2",
     "@lyonkit/bloks": "workspace:*",
-    "@unocss/nuxt": "0.43.1",
+    "@unocss/nuxt": "0.43.2",
     "vite": "2.9.13",
     "webpack": "5.73.0"
   }
