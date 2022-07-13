@@ -19,7 +19,7 @@ importers:
   apps/admin:
     specifiers:
       '@headlessui/vue': 1.6.7
-      '@iconify/json': 2.1.76
+      '@iconify/json': 2.1.77
       '@leo91000/lyonkit-client': 1.2.2
       '@lyonkit/bloks': workspace:*
       '@lyonkit/nuxt': workspace:*
@@ -36,7 +36,7 @@ importers:
       webpack: 5.73.0
     devDependencies:
       '@headlessui/vue': 1.6.7_vue@3.2.37
-      '@iconify/json': 2.1.76
+      '@iconify/json': 2.1.77
       '@leo91000/lyonkit-client': 1.2.2
       '@lyonkit/bloks': link:../../packages/bloks
       '@lyonkit/nuxt': link:../../packages/nuxt-kit
@@ -54,7 +54,7 @@ importers:
 
   apps/landing:
     specifiers:
-      '@iconify/json': 2.1.76
+      '@iconify/json': 2.1.77
       '@leo91000/lyonkit-client': 1.2.2
       '@lyonkit/bloks': workspace:*
       '@unocss/nuxt': 0.44.1
@@ -64,7 +64,7 @@ importers:
     dependencies:
       nuxt: 3.0.0-rc.4_6wqrjrdg73uqxf6byy7pahps2e
     devDependencies:
-      '@iconify/json': 2.1.76
+      '@iconify/json': 2.1.77
       '@leo91000/lyonkit-client': 1.2.2
       '@lyonkit/bloks': link:../../packages/bloks
       '@unocss/nuxt': 0.44.1_6wqrjrdg73uqxf6byy7pahps2e
@@ -78,7 +78,7 @@ importers:
       jsdom: 20.0.0
       typescript: 4.7.4
       vite: 2.9.14
-      vite-plugin-dts: 1.2.1
+      vite-plugin-dts: 1.3.0
       vitest: 0.18.0
       vue: 3.2.37
       vue-tsc: 0.38.5
@@ -88,7 +88,7 @@ importers:
       jsdom: 20.0.0
       typescript: 4.7.4
       vite: 2.9.14
-      vite-plugin-dts: 1.2.1_vite@2.9.14
+      vite-plugin-dts: 1.3.0_vite@2.9.14
       vitest: 0.18.0_jsdom@20.0.0
       vue: 3.2.37
       vue-tsc: 0.38.5_typescript@4.7.4
@@ -536,8 +536,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.76:
-    resolution: {integrity: sha512-U70Ty0NUvaYLXVl6d8+BeAf1C6UbDnAtWY9iSXng3JT9965I9D0Tvqpmuo0Mf1YCRz9d09QolR8sLX8KEFkq4Q==}
+  /@iconify/json/2.1.77:
+    resolution: {integrity: sha512-jiKXdacGC3OQjxSKj4XR38+qR/3IlvW+OyS4FLzrDhFB6XExlVXPu2saWJmrbtoMLCg+pdNsI2Cy/eNTzUFlQw==}
     dependencies:
       '@iconify/types': 1.1.0
       pathe: 0.3.2
@@ -7066,8 +7066,8 @@ packages:
       vscode-languageserver-textdocument: 1.0.5
       vscode-uri: 3.0.3
 
-  /vite-plugin-dts/1.2.1_vite@2.9.14:
-    resolution: {integrity: sha512-V59rsKQnPI6FTGybh/ED4+dyK3UeSkvC1CJzpuDNoXb7mKNUcWmg66EM0N5Ijoc8xDAfZIXYxQjg675YHIDvFw==}
+  /vite-plugin-dts/1.3.0_vite@2.9.14:
+    resolution: {integrity: sha512-YxDNqOE2wp713SyZ6AMmSu/sNfmiiy7GtlFXCMvlpD4nMaIbpqltidbve7fNlc3+gxlV+e156As/TwBtBp3g4Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: '>=2.4.4'
