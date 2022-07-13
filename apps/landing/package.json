@@ -8,7 +8,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "nuxt": "3.0.0-rc.4"
+    "nuxt": "3.0.0-rc.5"
   },
   "devDependencies": {
     "@iconify/json": "2.1.77",
