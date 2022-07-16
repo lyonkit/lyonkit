@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BlokOutput, PageOutput } from '@leo91000/lyonkit-client'
+import type { BlokOutput, PageOutput, PageOutputWithBloks } from '@leo91000/lyonkit-client'
 import { BloksRenderer } from '@lyonkit/bloks'
 
 const router = useRouter()
@@ -15,16 +15,21 @@ const path = computed(() => {
   return `/${route.params.path}`
 })
 
-const { isLoading, state: page, execute: refreshPage } = useAsyncState(() => lyonkit.getPage(path.value), null, {
-  onError(e) {
+const page = ref<PageOutputWithBloks>()
+async function refreshPage() {
+  try {
+    page.value = await lyonkit.getPage(path.value)
+  }
+  catch (e) {
     console.error('An error occurred while fetching page with blok', e)
     openToast({
       type: 'error',
       message: 'Une erreur est survenue lors de la récupération de la page',
     })
     router.push('/dashboard')
-  },
-})
+  }
+}
+onMounted(async () => refreshPage())
 
 async function onPageUpdated(page: PageOutput) {
   const promises: Promise<any>[] = [fetchPages()]
@@ -54,13 +59,13 @@ function openEditDialog(i: number) {
 }
 async function onBlokEdited() {
   editDialogParams.dialog = false
-  refreshPage()
+  await refreshPage()
 }
 </script>
 
 <template>
   <VContainer>
-    <div v-if="!page || isLoading">
+    <div v-if="!page">
       Loading...
     </div>
 
@@ -96,7 +101,7 @@ async function onBlokEdited() {
         <BtnBlokSelect :page-id="page.id" @created="refreshPage()" />
       </VRow>
 
-      <VRow>
+      <VRow class="pr-8 pl-4">
         <BloksRenderer
           :bloks="page.bloks"
           editor-mode
