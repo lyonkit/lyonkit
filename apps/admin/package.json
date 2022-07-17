@@ -21,7 +21,7 @@
     "@lyonkit/nuxt": "workspace:*",
     "@mdi/js": "^6.9.96",
     "@types/lodash-es": "4.17.6",
-    "@vueuse/nuxt": "8.9.3",
+    "@vueuse/nuxt": "8.9.4",
     "lodash-es": "4.17.21",
     "nuxt": "3.0.0-rc.5",
     "sass": "^1.53.0",
