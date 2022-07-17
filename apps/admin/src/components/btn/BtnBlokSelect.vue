@@ -28,6 +28,7 @@ async function createBlok() {
       props: defaultProps,
       componentId: input.value,
     })
+    toggleDialog(false)
     emit('created', blokOutput)
   }
   catch (e) {
@@ -67,12 +68,13 @@ async function createBlok() {
 
       <VCardActions>
         <VBtn
-          :prepend-icon="mdiCheck"
-          color="success"
-          class="d-block mx-auto"
+          color="!input ? undefined : 'success'"
           :disabled="!input"
+          :loading="loading"
+          class="d-block mx-auto"
           @click="createBlok()"
         >
+          <VIcon :icon="mdiCheck" />
           Valider
         </VBtn>
       </VCardActions>

@@ -51,7 +51,7 @@ async function onSubmit() {
   if (!loading.value) {
     loading.value = true
     try {
-      const udpatedBlok = await lyonkit.updateBlok({ blokId: props.blok.id, update: { ...props.blok, props: values } })
+      const udpatedBlok = await lyonkit.patchBlok({ blokId: props.blok.id, patch: { props: values } })
       emit('done', udpatedBlok)
     }
     catch (e) {
