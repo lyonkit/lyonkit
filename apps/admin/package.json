@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@headlessui/vue": "1.6.7",
-    "@iconify/json": "2.1.78",
+    "@iconify/json": "2.1.79",
     "@leo91000/lyonkit-client": "1.4.1",
     "@lyonkit/bloks": "workspace:*",
     "@lyonkit/nuxt": "workspace:*",
@@ -23,7 +23,7 @@
     "@types/lodash-es": "4.17.6",
     "@vueuse/nuxt": "8.9.4",
     "lodash-es": "4.17.21",
-    "nuxt": "3.0.0-rc.5",
+    "nuxt": "3.0.0-rc.6",
     "sass": "^1.53.0",
     "vite": "2.9.14",
     "vitest": "0.18.1",

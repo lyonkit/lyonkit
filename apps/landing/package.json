@@ -8,10 +8,10 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "nuxt": "3.0.0-rc.5"
+    "nuxt": "3.0.0-rc.6"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.78",
+    "@iconify/json": "2.1.79",
     "@leo91000/lyonkit-client": "1.4.1",
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.44.3",
