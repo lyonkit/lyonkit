@@ -19,7 +19,7 @@
     "@leo91000/lyonkit-client": "1.4.1",
     "@lyonkit/bloks": "workspace:*",
     "@lyonkit/nuxt": "workspace:*",
-    "@mdi/js": "^6.9.96",
+    "@mdi/js": "^7.0.96",
     "@types/lodash-es": "4.17.6",
     "@vueuse/nuxt": "8.9.4",
     "lodash-es": "4.17.21",
