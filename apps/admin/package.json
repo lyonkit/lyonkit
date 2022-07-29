@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@headlessui/vue": "1.6.7",
-    "@iconify/json": "2.1.81",
+    "@iconify/json": "2.1.85",
     "@leo91000/lyonkit-client": "1.4.1",
     "@lyonkit/bloks": "workspace:*",
     "@lyonkit/nuxt": "workspace:*",
@@ -24,11 +24,11 @@
     "@vueuse/nuxt": "8.9.4",
     "lodash-es": "4.17.21",
     "nuxt": "3.0.0-rc.6",
-    "sass": "^1.53.0",
+    "sass": "^1.54.0",
     "vite": "2.9.14",
-    "vitest": "0.18.1",
+    "vitest": "0.19.1",
     "vue": "3.2.37",
     "vuetify": "3.0.0-beta.5",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   }
 }
