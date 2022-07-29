@@ -23,7 +23,7 @@ jobs:
         run: corepack enable
 
       - name: Install
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
@@ -41,7 +41,7 @@ jobs:
         run: corepack enable
 
       - name: Install
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build
         run: pnpm run build
