@@ -28,7 +28,7 @@ importers:
       '@vueuse/nuxt': 9.1.0
       lodash-es: 4.17.21
       nuxt: 3.0.0-rc.6
-      sass: 1.54.2
+      sass: 1.54.3
       vite: 2.9.14
       vitest: 0.20.3
       vue: 3.2.37
@@ -44,10 +44,10 @@ importers:
       '@types/lodash-es': 4.17.6
       '@vueuse/nuxt': 9.1.0_dtfzhbajilkwzsdqf7v3nmesue
       lodash-es: 4.17.21
-      nuxt: 3.0.0-rc.6_ezpmwv2oygz22jmuzowfzujhy4
-      sass: 1.54.2
-      vite: 2.9.14_sass@1.54.2
-      vitest: 0.20.3_sass@1.54.2
+      nuxt: 3.0.0-rc.6_fbwmccjvt6tgimqccdhgwuno2a
+      sass: 1.54.3
+      vite: 2.9.14_sass@1.54.3
+      vitest: 0.20.3_sass@1.54.3
       vue: 3.2.37
       vuetify: 3.0.0-beta.6_vue@3.2.37
       webpack: 5.74.0
@@ -969,7 +969,7 @@ packages:
       - webpack
     dev: false
 
-  /@nuxt/vite-builder/3.0.0-rc.6_wnuqinyg4mq6iagd6lxntbkge4:
+  /@nuxt/vite-builder/3.0.0-rc.6_ywhickpzqiprxy7kadd4cildfy:
     resolution: {integrity: sha512-nQ1J3A1IdDAKLwBOCNLKyk6wlefIpIrx8JZn5RQ7+IRujYRX9ed+eE+T+FMa1Mb4/3l1eDJkZ410gpffM+w0ew==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     peerDependencies:
@@ -1003,8 +1003,8 @@ packages:
       rollup-plugin-visualizer: 5.7.1_rollup@2.77.0
       ufo: 0.8.5
       unplugin: 0.7.2_35f67vkejaekuwqr2uyr26hgze
-      vite: 2.9.14_sass@1.54.2
-      vite-node: 0.18.1_sass@1.54.2
+      vite: 2.9.14_sass@1.54.3
+      vite-node: 0.18.1_sass@1.54.3
       vite-plugin-checker: 0.4.9_vite@2.9.14
       vue: 3.2.37
     transitivePeerDependencies:
@@ -5026,7 +5026,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /nuxt/3.0.0-rc.6_ezpmwv2oygz22jmuzowfzujhy4:
+  /nuxt/3.0.0-rc.6_fbwmccjvt6tgimqccdhgwuno2a:
     resolution: {integrity: sha512-Ko/LBIUBf25bSXKoRnPEplMngw2dHU8qkV5Twdm7yZ0DfdFkwaTVzTtwvbWsFt+H9vh1aUUTCSyEWnmNorkkxQ==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     hasBin: true
@@ -5036,7 +5036,7 @@ packages:
       '@nuxt/schema': 3.0.0-rc.6_oscupaoviefunwwprjv3wetwvi
       '@nuxt/telemetry': 2.1.3_oscupaoviefunwwprjv3wetwvi
       '@nuxt/ui-templates': 0.2.1
-      '@nuxt/vite-builder': 3.0.0-rc.6_wnuqinyg4mq6iagd6lxntbkge4
+      '@nuxt/vite-builder': 3.0.0-rc.6_ywhickpzqiprxy7kadd4cildfy
       '@vue/reactivity': 3.2.37
       '@vue/shared': 3.2.37
       '@vueuse/head': 0.7.6_vue@3.2.37
@@ -6099,8 +6099,8 @@ packages:
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass/1.54.2:
-    resolution: {integrity: sha512-wbVV26sejsCIbBScZZtNkvnrB/bVCQ8hSlZ01D9nzsVh9zLqCkWrlpvTb3YEb6xsuNi9cx75hncqwikHFSz7tw==}
+  /sass/1.54.3:
+    resolution: {integrity: sha512-fLodey5Qd41Pxp/Tk7Al97sViYwF/TazRc5t6E65O7JOk4XF8pzwIW7CvCxYVOfJFFI/1x5+elDyBIixrp+zrw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -7205,7 +7205,7 @@ packages:
       - supports-color
     dev: false
 
-  /vite-node/0.18.1_sass@1.54.2:
+  /vite-node/0.18.1_sass@1.54.3:
     resolution: {integrity: sha512-tS73HzJn0DokGC/QRi0GzrzKjwjTE7eAroKsZYzqYUclttK1gGb5jDeilAVql89SMVSkcGwnxk/Xu6aoDWa5MQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -7214,7 +7214,7 @@ packages:
       kolorist: 1.5.1
       mlly: 0.5.4
       pathe: 0.2.0
-      vite: 2.9.14_sass@1.54.2
+      vite: 2.9.14_sass@1.54.3
     transitivePeerDependencies:
       - less
       - sass
@@ -7286,7 +7286,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vite/2.9.14_sass@1.54.2:
+  /vite/2.9.14_sass@1.54.3:
     resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
@@ -7306,7 +7306,7 @@ packages:
       postcss: 8.4.14
       resolve: 1.22.1
       rollup: 2.77.0
-      sass: 1.54.2
+      sass: 1.54.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -7353,7 +7353,7 @@ packages:
       - supports-color
     dev: true
 
-  /vitest/0.20.3_sass@1.54.2:
+  /vitest/0.20.3_sass@1.54.3:
     resolution: {integrity: sha512-cXMjTbZxBBUUuIF3PUzEGPLJWtIMeURBDXVxckSHpk7xss4JxkiiWh5cnIlfGyfJne2Ii3QpbiRuFL5dMJtljw==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -7386,7 +7386,7 @@ packages:
       local-pkg: 0.4.2
       tinypool: 0.2.4
       tinyspy: 1.0.0
-      vite: 2.9.14_sass@1.54.2
+      vite: 2.9.14_sass@1.54.3
     transitivePeerDependencies:
       - less
       - sass
