@@ -1,7 +1,7 @@
-import type { AsyncComponentLoader } from 'vue'
+import type { AsyncComponentLoader, Component } from 'vue'
 import { defineAsyncComponent } from 'vue'
 
-export function defineBlokComponent<T = any>(loader: AsyncComponentLoader<T>) {
+export function defineBlokComponent<T extends Component = any>(loader: AsyncComponentLoader<T>) {
   // TODO: Add loader & error component
   return defineAsyncComponent({
     loader,
