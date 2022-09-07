@@ -20,7 +20,7 @@
     "test": "vitest run"
   },
   "peerDependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.38"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "3.1.0",
