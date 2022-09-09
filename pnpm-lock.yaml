@@ -19,7 +19,7 @@ importers:
   apps/admin:
     specifiers:
       '@headlessui/vue': 1.7.0
-      '@iconify/json': 2.1.104
+      '@iconify/json': 2.1.105
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': workspace:*
       '@lyonkit/nuxt': workspace:*
@@ -36,7 +36,7 @@ importers:
       webpack: 5.74.0
     devDependencies:
       '@headlessui/vue': 1.7.0_vue@3.2.39
-      '@iconify/json': 2.1.104
+      '@iconify/json': 2.1.105
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': link:../../packages/bloks
       '@lyonkit/nuxt': link:../../packages/nuxt-kit
@@ -54,7 +54,7 @@ importers:
 
   apps/landing:
     specifiers:
-      '@iconify/json': 2.1.104
+      '@iconify/json': 2.1.105
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': workspace:*
       '@unocss/nuxt': 0.45.18
@@ -64,7 +64,7 @@ importers:
     dependencies:
       nuxt: 3.0.0-rc.9_fur7awe7sddig5uusmg32radwu
     devDependencies:
-      '@iconify/json': 2.1.104
+      '@iconify/json': 2.1.105
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': link:../../packages/bloks
       '@unocss/nuxt': 0.45.18_fur7awe7sddig5uusmg32radwu
@@ -562,11 +562,11 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.104:
-    resolution: {integrity: sha512-wPD/EzHNbGKjPumkyXSVF0EMb6dEBmR50yButPl35aW1/AO9TcJiVpCbvVk9iwpfje+yx/pfaFdY6L78sOUuMw==}
+  /@iconify/json/2.1.105:
+    resolution: {integrity: sha512-D78gRq6TAHW443TqF2+gR6cXD/zChraxlK1r+YUwKgTaOg0o7oxmpjgHpjuK9Q9ZUhUmeRiTbqP6eOL9X48N2Q==}
     dependencies:
       '@iconify/types': 1.1.0
-      pathe: 0.3.2
+      pathe: 0.3.7
     dev: true
 
   /@iconify/types/1.1.0:
@@ -5253,7 +5253,7 @@ packages:
   /mlly/0.5.4:
     resolution: {integrity: sha512-gFlsLWCjVwu/LM/ZfYUkmnbBoz7eyBIMUwVQYDqhd8IvtNFDeZ95uwAyxHE2Xx7tQwePQaCo4fECZ9MWFEUTgQ==}
     dependencies:
-      pathe: 0.3.2
+      pathe: 0.3.7
       pkg-types: 0.3.3
     dev: true
 
@@ -5866,10 +5866,6 @@ packages:
   /pathe/0.2.0:
     resolution: {integrity: sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==}
 
-  /pathe/0.3.2:
-    resolution: {integrity: sha512-qhnmX0TOqlCvdWWTkoM83wh5J8fZ2yhbDEc9MlsnAEtEc+JCwxUKEwmd6pkY9hRe6JR1Uecbc14VcAKX2yFSTA==}
-    dev: true
-
   /pathe/0.3.7:
     resolution: {integrity: sha512-yz7GK+kSsS27x727jtXpd5VT4dDfP/JDIQmaowfxyWCnFjOWtE1VIh7i6TzcSfzW0n4+bRQztj1VdKnITNq/MA==}
 
@@ -5896,7 +5892,7 @@ packages:
     dependencies:
       jsonc-parser: 3.1.0
       mlly: 0.5.4
-      pathe: 0.3.2
+      pathe: 0.3.7
     dev: true
 
   /pkg-types/0.3.5:
