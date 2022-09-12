@@ -14,7 +14,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@headlessui/vue": "1.7.0",
+    "@headlessui/vue": "1.7.1",
     "@iconify/json": "2.1.106",
     "@leo91000/lyonkit-client": "1.9.6",
     "@lyonkit/bloks": "workspace:*",
