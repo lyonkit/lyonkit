@@ -18,7 +18,7 @@ importers:
 
   apps/admin:
     specifiers:
-      '@headlessui/vue': 1.7.1
+      '@headlessui/vue': 1.7.2
       '@iconify/json': 2.1.107
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': workspace:*
@@ -32,10 +32,10 @@ importers:
       vite: 3.1.1
       vitest: 0.23.2
       vue: 3.2.39
-      vuetify: 3.0.0-beta.10
+      vuetify: 3.0.0-beta.11
       webpack: 5.74.0
     devDependencies:
-      '@headlessui/vue': 1.7.1_vue@3.2.39
+      '@headlessui/vue': 1.7.2_vue@3.2.39
       '@iconify/json': 2.1.107
       '@leo91000/lyonkit-client': 1.9.6
       '@lyonkit/bloks': link:../../packages/bloks
@@ -49,7 +49,7 @@ importers:
       vite: 3.1.1_sass@1.54.9
       vitest: 0.23.2_sass@1.54.9
       vue: 3.2.39
-      vuetify: 3.0.0-beta.10_vue@3.2.39
+      vuetify: 3.0.0-beta.11_vue@3.2.39
       webpack: 5.74.0
 
   apps/landing:
@@ -534,8 +534,8 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/vue/1.7.1_vue@3.2.39:
-    resolution: {integrity: sha512-mbwn1cT92aozb7GDsLvYBx3O44okBwN4FJEf9ZnncFl83XRnxkw73oGc4CwPsDGAelxvzkginSrgEiK+vUOXIg==}
+  /@headlessui/vue/1.7.2_vue@3.2.39:
+    resolution: {integrity: sha512-nmmFpQxnAy6zgf5r0pwdAH3Qw2IsSbTgvkpov9RkEVE8A6aPAT4iaAaPEAzdI+sPL5Wby05mhciJXSqtkLu+vQ==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -7866,8 +7866,8 @@ packages:
       '@vue/server-renderer': 3.2.39_vue@3.2.39
       '@vue/shared': 3.2.39
 
-  /vuetify/3.0.0-beta.10_vue@3.2.39:
-    resolution: {integrity: sha512-xs5wTbDiwqygalhoMyZl8x8NssLPoi6rjUIwQ9b+1g5OqZZAbLquHx7CnJj0dP0GapBucQsjxZIAno3Vq6V3sw==}
+  /vuetify/3.0.0-beta.11_vue@3.2.39:
+    resolution: {integrity: sha512-WHwHNRpnDZ2ZUaOlL3oSnIvVSz0kVLmF/OVQUupIYvgV8pERgFN2NtXN5E3bq/DQkMyYcEUcnSQIrzQs2aZ36A==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       '@formatjs/intl': ^1.0.0 || ^2.0.0
