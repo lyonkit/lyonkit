@@ -20,7 +20,7 @@ importers:
     specifiers:
       '@headlessui/vue': 1.7.2
       '@iconify/json': 2.1.108
-      '@leo91000/lyonkit-client': 1.9.6
+      '@leo91000/lyonkit-client': 1.9.7
       '@lyonkit/bloks': workspace:*
       '@lyonkit/nuxt': workspace:*
       '@mdi/js': ^7.0.96
@@ -37,7 +37,7 @@ importers:
     devDependencies:
       '@headlessui/vue': 1.7.2_vue@3.2.39
       '@iconify/json': 2.1.108
-      '@leo91000/lyonkit-client': 1.9.6
+      '@leo91000/lyonkit-client': 1.9.7
       '@lyonkit/bloks': link:../../packages/bloks
       '@lyonkit/nuxt': link:../../packages/nuxt-kit
       '@mdi/js': 7.0.96
@@ -55,7 +55,7 @@ importers:
   apps/landing:
     specifiers:
       '@iconify/json': 2.1.108
-      '@leo91000/lyonkit-client': 1.9.6
+      '@leo91000/lyonkit-client': 1.9.7
       '@lyonkit/bloks': workspace:*
       '@unocss/nuxt': 0.45.21
       nuxt: 3.0.0-rc.10
@@ -65,7 +65,7 @@ importers:
       nuxt: 3.0.0-rc.10_6qjthyqm7xtbvvad73rwvanqlu
     devDependencies:
       '@iconify/json': 2.1.108
-      '@leo91000/lyonkit-client': 1.9.6
+      '@leo91000/lyonkit-client': 1.9.7
       '@lyonkit/bloks': link:../../packages/bloks
       '@unocss/nuxt': 0.45.21_6qjthyqm7xtbvvad73rwvanqlu
       vite: 3.1.2
@@ -95,7 +95,7 @@ importers:
 
   packages/nuxt-kit:
     specifiers:
-      '@leo91000/lyonkit-client': ^1.9.6
+      '@leo91000/lyonkit-client': ^1.9.7
       '@lyonkit/bloks': workspace:*
       '@nuxt/kit': 3.0.0-rc.10
       '@nuxt/module-builder': 0.1.7
@@ -103,7 +103,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.10_uu2p2v3owefbwsafzxfcsbbrxa
     devDependencies:
-      '@leo91000/lyonkit-client': 1.9.6
+      '@leo91000/lyonkit-client': 1.9.7
       '@lyonkit/bloks': link:../bloks
       '@nuxt/module-builder': 0.1.7
       '@nuxt/schema': 3.0.0-rc.10_uu2p2v3owefbwsafzxfcsbbrxa
@@ -636,8 +636,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@leo91000/lyonkit-client/1.9.6:
-    resolution: {integrity: sha512-BIWlLN7KlxvtVMHJHjkO3oMEMgYkUY2KHWer4htzejxv7ZaMdFBimrD9Po0zQLTuZWQjQhnOBuOZEJyNEqWWvg==}
+  /@leo91000/lyonkit-client/1.9.7:
+    resolution: {integrity: sha512-RlYN/SO+WCBalyWd50OlNWgVajiIics6mafe6LKuFa69+jCXs35ar6j9tH2bPvCV3I2a9onftqnJurzhQ9NQsg==}
     dependencies:
       ohmyfetch: 0.4.18
       ufo: 0.8.5

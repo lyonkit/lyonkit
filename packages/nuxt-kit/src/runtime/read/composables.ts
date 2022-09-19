@@ -1,7 +1,7 @@
-import type { LyonkitReadonlyApiClient } from '@leo91000/lyonkit-client'
+import type { createLyonkitReadonlyApiClient } from '@leo91000/lyonkit-client'
 import { useNuxtApp } from '#imports'
 
-export function useLyonkit(): LyonkitReadonlyApiClient {
+export function useLyonkit(): ReturnType<typeof createLyonkitReadonlyApiClient> {
   const nuxtApp = useNuxtApp()
   return nuxtApp.$lyonkit
 }

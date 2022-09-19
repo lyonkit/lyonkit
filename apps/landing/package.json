@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@iconify/json": "2.1.108",
-    "@leo91000/lyonkit-client": "1.9.6",
+    "@leo91000/lyonkit-client": "1.9.7",
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.45.21",
     "vite": "3.1.2",

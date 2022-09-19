@@ -19,14 +19,14 @@
     "prepare": "nuxt-module-build --stub"
   },
   "peerDependencies": {
-    "@leo91000/lyonkit-client": "^1.9.6",
+    "@leo91000/lyonkit-client": "^1.9.7",
     "@lyonkit/bloks": "workspace:*"
   },
   "dependencies": {
     "@nuxt/kit": "3.0.0-rc.10"
   },
   "devDependencies": {
-    "@leo91000/lyonkit-client": "^1.9.6",
+    "@leo91000/lyonkit-client": "^1.9.7",
     "@lyonkit/bloks": "workspace:*",
     "@nuxt/module-builder": "0.1.7",
     "@nuxt/schema": "3.0.0-rc.10"

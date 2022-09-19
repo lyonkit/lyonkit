@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { mdiChevronDown, mdiChevronRight, mdiChevronUp, mdiCreation, mdiPageLayoutBody, mdiViewDashboard } from '@mdi/js'
+import { mdiChevronDown, mdiChevronRight, mdiChevronUp, mdiCreation, mdiPageLayoutBody, mdiSortVariant, mdiViewDashboard } from '@mdi/js'
 
 const drawer = useLocalStorage('drawer', true)
 const toggleDrawer = useToggle(drawer)
@@ -23,6 +23,11 @@ const menu = computed(() => [
         text: 'Créer un page',
         icon: mdiCreation,
         to: '/pages/create',
+      },
+      {
+        text: 'Organiser les pages',
+        icon: mdiSortVariant,
+        to: '/pages/organize',
       },
       ...pages.value.map(page => ({
         text: page.title,
