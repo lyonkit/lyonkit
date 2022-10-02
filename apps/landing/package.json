@@ -7,14 +7,12 @@
     "dev": "nuxt dev --port 1211 --host localhost",
     "typecheck": "nuxt typecheck"
   },
-  "dependencies": {
-    "nuxt": "3.0.0-rc.11"
-  },
   "devDependencies": {
     "@iconify/json": "2.1.116",
     "@leo91000/lyonkit-client": "1.9.7",
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.45.26",
+    "nuxt": "3.0.0-rc.11",
     "vite": "3.1.4",
     "webpack": "5.74.0"
   }
