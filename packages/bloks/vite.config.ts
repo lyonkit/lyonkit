@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import dts from 'vite-plugin-dts'
+import Dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -21,10 +21,10 @@ export default defineConfig({
     minify: false,
   },
   plugins: [
-    dts(),
-    Vue({
-      reactivityTransform: true,
+    Dts({
+      include: ['src/**/*'],
     }),
+    Vue(),
   ],
   test: {
     include: ['tests/**/*.test.ts'],

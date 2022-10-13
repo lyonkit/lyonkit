@@ -1,5 +1,5 @@
 import {
-  addAutoImport,
+  addImports,
   addPlugin,
   addTemplate,
   createResolver,
@@ -48,11 +48,11 @@ export default defineNuxtModule<ModuleOptions>({
 
     if (opts.readOnly) {
       addPlugin(resolveRuntimeModule('./read/plugin'))
-      addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./read/composables') })
+      addImports({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./read/composables') })
     }
     else {
       addPlugin(resolveRuntimeModule('./write/plugin'))
-      addAutoImport({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./write/composables') })
+      addImports({ name: 'useLyonkit', as: 'useLyonkit', from: resolveRuntimeModule('./write/composables') })
     }
 
     nuxt.options.css.push('@lyonkit/bloks/assets/style.css')

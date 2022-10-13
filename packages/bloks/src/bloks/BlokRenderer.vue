@@ -1,30 +1,26 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ComponentsMap } from './index'
-
-interface BlokProps {
-  componentId: string
-  props: Record<string, any>
-}
+import type { BlokIds } from './map'
+import { BlokMap } from './map'
 
 const props = withDefaults(defineProps<{
-  bloks: BlokProps[]
+  bloks: ({ componentId: BlokIds; props: Record<string, any> })[]
   editorMode?: boolean
 }>(), {
   editorMode: false,
 })
 
-defineEmits({
-  up: (_payload: number) => true,
-  down: (_payload: number) => true,
-  edit: (_payload: number) => true,
-  delete: (_payload: number) => true,
-})
+defineEmits<{
+  (event: 'up', payload: number): void
+  (event: 'down', payload: number): void
+  (event: 'edit', payload: number): void
+  (event: 'delete', payload: number): void
+}>()
 
 const selectedBlok = ref<number>()
 
-function getComponent(componentId: string) {
-  const spec = ComponentsMap[componentId as keyof typeof ComponentsMap]
+function getComponent(componentId: BlokIds) {
+  const spec = BlokMap[componentId]
   if (!spec)
     throw new Error(`Unknown blok component ${componentId}`)
 
@@ -135,18 +131,18 @@ function getComponent(componentId: string) {
 }
 
 .up {
-  mask-image: url("./assets/img/IcRoundArrowUpward.svg");
+  mask-image: url("../assets/img/IcRoundArrowUpward.svg");
 }
 
 .down {
-  mask-image: url("./assets/img/IcRoundArrowDownward.svg");
+  mask-image: url("../assets/img/IcRoundArrowDownward.svg");
 }
 
 .edit {
-  mask-image: url("./assets/img/IcRoundEdit.svg");
+  mask-image: url("../assets/img/IcRoundEdit.svg");
 }
 
 .delete {
-  mask-image: url("./assets/img/IcRoundDelete.svg");
+  mask-image: url("../assets/img/IcRoundDelete.svg");
 }
 </style>

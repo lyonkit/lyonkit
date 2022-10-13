@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   ssr: false,
   runtimeConfig: {
     public: {
-      lyonkitApiKey: '',
+      lyonkitApiKey: process.env.LYONKIT_API_KEY ?? '',
     },
   },
   modules: [

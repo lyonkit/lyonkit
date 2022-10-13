@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ComponentsMap } from '@lyonkit/bloks'
+import type { BlokIds } from '@lyonkit/bloks'
+import { BlokMap } from '@lyonkit/bloks'
 import { mdiCheck, mdiClose, mdiPlus } from '@mdi/js'
 import { mapValues } from 'lodash-es'
 import type { BlokOutput } from '@leo91000/lyonkit-client'
@@ -9,7 +10,7 @@ const emit = defineEmits<{
   (event: 'created', blok: BlokOutput): void
 }>()
 
-const input = ref<keyof typeof ComponentsMap>()
+const input = ref<BlokIds>()
 const [dialog, toggleDialog] = useToggle(false)
 
 const { openToast } = useToast()
@@ -22,7 +23,7 @@ async function createBlok() {
   loading.value = true
 
   try {
-    const defaultProps = mapValues(ComponentsMap[input.value].props, prop => prop.default)
+    const defaultProps = mapValues(BlokMap[input.value].props, prop => prop.default)
     const blokOutput = await lyonkit.createBlok({
       pageId: props.pageId,
       props: defaultProps,

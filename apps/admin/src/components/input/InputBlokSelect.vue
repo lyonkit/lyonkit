@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { ComponentsMap } from '@lyonkit/bloks'
+import type { BlokIds } from '@lyonkit/bloks'
 
-type BloksId = keyof typeof ComponentsMap
-const props = defineProps<{ modelValue?: BloksId }>()
+const props = defineProps<{ modelValue?: BlokIds }>()
 const emit = defineEmits<{
-  (event: 'update:modelValue', value: BloksId): void
+  (event: 'update:modelValue', value: BlokIds): void
 }>()
 
 const model = useVModel(props, 'modelValue', emit, { passive: true })

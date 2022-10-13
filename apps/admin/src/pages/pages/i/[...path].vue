@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { BlokOutput, PageOutput, PageOutputWithBloks } from '@leo91000/lyonkit-client'
-import { BloksRenderer } from '@lyonkit/bloks'
+import { BlokRenderer } from '@lyonkit/bloks'
 
 const router = useRouter()
 const route = useRoute()
@@ -102,7 +102,7 @@ async function onBlokEdited() {
       </VRow>
 
       <VRow class="pr-8 pl-4">
-        <BloksRenderer
+        <BlokRenderer
           :bloks="page.bloks"
           editor-mode
           @edit="openEditDialog"

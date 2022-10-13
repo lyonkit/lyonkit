@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { BlokOutput } from '@leo91000/lyonkit-client'
-import { ComponentsMap } from '@lyonkit/bloks'
+import { BlokMap } from '@lyonkit/bloks'
 import { mdiClose } from '@mdi/js'
 
 const props = defineProps<{
@@ -16,13 +16,14 @@ const lyonkit = useLyonkit()
 const { openToast } = useToast()
 
 const inputs = computed(() => {
-  const spec = ComponentsMap[props.blok.componentId as keyof typeof ComponentsMap]
+  const spec = BlokMap[props.blok.componentId as keyof typeof BlokMap]
   const inputs: { name: string; component: ReturnType<typeof resolveComponent>; props: Record<string, any> }[] = []
   if (!spec)
     return inputs
 
-  for (const name in spec.props) {
-    const prop = spec.props[name]
+  const specProps = spec.props
+  for (const name in specProps) {
+    const prop = specProps[name as keyof typeof specProps]
     switch (prop.type) {
       case 'select':
         inputs.push({ name, component: resolveComponent('VSelect'), props: { items: prop.options, label: prop.label } })
