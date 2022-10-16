@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
-  css: ['assets/css/styles.css'],
+  css: ['assets/css/main.css'],
   modules: ['@unocss/nuxt'],
 })

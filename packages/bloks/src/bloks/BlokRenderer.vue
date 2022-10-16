@@ -10,12 +10,12 @@ const props = withDefaults(defineProps<{
   editorMode: false,
 })
 
-defineEmits<{
-  (event: 'up', payload: number): void
-  (event: 'down', payload: number): void
-  (event: 'edit', payload: number): void
-  (event: 'delete', payload: number): void
-}>()
+defineEmits({
+  up: (_payload: number) => true,
+  down: (_payload: number) => true,
+  edit: (_payload: number) => true,
+  delete: (_payload: number) => true,
+})
 
 const selectedBlok = ref<number>()
 

@@ -32,7 +32,7 @@ const menu = computed(() => [
       ...pages.value.map(page => ({
         text: page.title,
         icon: mdiChevronRight,
-        to: `/pages/i${page.path}`,
+        to: `/pages/_${page.path}`,
       })),
     ],
   },

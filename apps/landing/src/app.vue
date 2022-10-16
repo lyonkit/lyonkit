@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ComponentsMap } from '@lyonkit/bloks'
+import { BlokMap } from '@lyonkit/bloks'
 
-const HelloWorld = ComponentsMap['#hello-world'].component
+const HelloWorld = BlokMap['#hello-world'].component
 </script>
 
 <template>
@@ -9,10 +9,8 @@ const HelloWorld = ComponentsMap['#hello-world'].component
     <p class="font-bold">
       Bold
     </p>
-    <component
-      :is="HelloWorld"
+    <HelloWorld
       :heading="4"
-      template
     />
   </div>
 </template>

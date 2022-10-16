@@ -4,7 +4,7 @@ import { BlokRenderer } from '@lyonkit/bloks'
 
 const router = useRouter()
 const route = useRoute()
-const lyonkit = useLyonkit()
+const { getPage } = useLyonkit()
 const { openToast } = useToast()
 const { fetchPages } = usePageList()
 
@@ -18,7 +18,7 @@ const path = computed(() => {
 const page = ref<PageOutputWithBloks>()
 async function refreshPage() {
   try {
-    page.value = await lyonkit.getPage(path.value)
+    page.value = await getPage(path.value)
   }
   catch (e) {
     console.error('An error occurred while fetching page with blok', e)
