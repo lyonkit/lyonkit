@@ -6,6 +6,7 @@ import {
   defineNuxtModule,
   resolveModule,
 } from '@nuxt/kit'
+import type { NuxtModule } from '@nuxt/schema'
 import { name, version } from '../package.json'
 
 export interface ModuleOptions {
@@ -21,7 +22,7 @@ export interface ModuleOptions {
   readOnly?: boolean
 }
 
-export default defineNuxtModule<ModuleOptions>({
+export default <NuxtModule<ModuleOptions>> defineNuxtModule<ModuleOptions>({
   meta: {
     name,
     version,
