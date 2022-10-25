@@ -32,7 +32,7 @@ importers:
       vite: 3.1.8
       vitest: 0.24.3
       vue: 3.2.41
-      vuetify: 3.0.0-beta.14
+      vuetify: 3.0.0-beta.15
       webpack: 5.74.0
     devDependencies:
       '@headlessui/vue': 1.7.3_vue@3.2.41
@@ -49,7 +49,7 @@ importers:
       vite: 3.1.8_sass@1.55.0
       vitest: 0.24.3_sass@1.55.0
       vue: 3.2.41
-      vuetify: 3.0.0-beta.14_vue@3.2.41
+      vuetify: 3.0.0-beta.15_vue@3.2.41
       webpack: 5.74.0
 
   apps/landing:
@@ -7835,8 +7835,8 @@ packages:
       '@vue/shared': 3.2.41
     dev: true
 
-  /vuetify/3.0.0-beta.14_vue@3.2.41:
-    resolution: {integrity: sha512-7UX2rAcMPGdJ0SGAK+wUvlJTHR0KasYILhg7dV9hLyv9SfaTX4tbOQnSQVf4mXzdFB+5jDyaTs+bOYMVeoqXYg==}
+  /vuetify/3.0.0-beta.15_vue@3.2.41:
+    resolution: {integrity: sha512-Tw4StO4JJxwzN7RIAJ+nBVTaftlk3TqfqCtMLwJY/SO/ciVru+sHtahOpXIbp8B43d/DIRql3mfnrz1ooTSXtQ==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       vite-plugin-vuetify: ^1.0.0-alpha.12
