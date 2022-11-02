@@ -2,7 +2,7 @@
   "name": "@lyonkit/monorepo",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@7.14.1",
+  "packageManager": "pnpm@7.14.2",
   "description": "Monorepo starter that feature page building CMS",
   "author": "Léo Coletta <leo.coletta@pm.me>",
   "volta": {
@@ -22,10 +22,10 @@
     "@bloks": "pnpm --filter @lyonkit/bloks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.29.2",
+    "@antfu/eslint-config": "0.29.3",
     "eslint": "8.26.0",
     "typescript": "4.8.4",
-    "unocss": "0.46.2",
+    "unocss": "0.46.3",
     "vite": "3.2.2"
   }
 }
