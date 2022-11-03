@@ -18,7 +18,7 @@ importers:
 
   apps/admin:
     specifiers:
-      '@headlessui/vue': 1.7.3
+      '@headlessui/vue': 1.7.4
       '@iconify/json': 2.1.132
       '@leo91000/lyonkit-client': 1.10.1
       '@lyonkit/bloks': workspace:*
@@ -35,7 +35,7 @@ importers:
       vuetify: 3.0.0
       webpack: 5.74.0
     devDependencies:
-      '@headlessui/vue': 1.7.3_vue@3.2.41
+      '@headlessui/vue': 1.7.4_vue@3.2.41
       '@iconify/json': 2.1.132
       '@leo91000/lyonkit-client': 1.10.1
       '@lyonkit/bloks': link:../../packages/bloks
@@ -530,8 +530,8 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/vue/1.7.3_vue@3.2.41:
-    resolution: {integrity: sha512-Is4iakKts9u9E0+jEZNzoJpBjwq2SamwEIoEl2RlyYSu6Zco536GsPXaQEfg/o7Eyc1GUUlcL+dJd4Rt7qyf7A==}
+  /@headlessui/vue/1.7.4_vue@3.2.41:
+    resolution: {integrity: sha512-QHRlKCK/zRpjSjhth7c2CZvx5eMDFflXauqRdRJgp1CwScx6PwCpWiwDsjQcYM4z8Yik2ZvyX8W4PFT2Wsqqyw==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
