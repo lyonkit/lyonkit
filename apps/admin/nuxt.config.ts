@@ -1,12 +1,14 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
-  meta: {
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { name: 'msapplication-TileColor', content: '#99c53e' },
-      { name: 'theme-color', content: '#99c53e' },
-      { name: 'googlebot', content: 'noindex' },
-    ],
+  app: {
+    head: {
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        { name: 'msapplication-TileColor', content: '#99c53e' },
+        { name: 'theme-color', content: '#99c53e' },
+        { name: 'googlebot', content: 'noindex' },
+      ],
+    },
   },
   lyonkit: {
     readOnly: false,
