@@ -7,7 +7,7 @@
   "author": "Léo Coletta <leo.coletta@pm.me>",
   "volta": {
     "node": "18.12.1",
-    "npm": "8.19.3"
+    "npm": "9.1.0"
   },
   "scripts": {
     "build": "pnpm -r run build",
