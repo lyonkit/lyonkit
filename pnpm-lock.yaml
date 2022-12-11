@@ -23,7 +23,7 @@ importers:
       '@leo91000/lyonkit-client': 1.10.1
       '@lyonkit/bloks': workspace:*
       '@lyonkit/nuxt': workspace:*
-      '@mdi/js': ^7.0.96
+      '@mdi/js': ^7.1.96
       '@types/lodash-es': 4.17.6
       '@vueuse/nuxt': 9.6.0
       lodash-es: 4.17.21
@@ -40,7 +40,7 @@ importers:
       '@leo91000/lyonkit-client': 1.10.1
       '@lyonkit/bloks': link:../../packages/bloks
       '@lyonkit/nuxt': link:../../packages/nuxt-kit
-      '@mdi/js': 7.0.96
+      '@mdi/js': 7.1.96
       '@types/lodash-es': 4.17.6
       '@vueuse/nuxt': 9.6.0_nuxt@3.0.0+vue@3.2.45
       lodash-es: 4.17.21
@@ -655,8 +655,8 @@ packages:
       - supports-color
     dev: true
 
-  /@mdi/js/7.0.96:
-    resolution: {integrity: sha512-lNqhkV3cpPfYb/Avh+vXLFukUTbHbyHoFo4Jdc7Oc9UvURGVhamFIpgOVvEf2bNA78zvjXTZeVWExUTR+DLBfQ==}
+  /@mdi/js/7.1.96:
+    resolution: {integrity: sha512-wlrJs6Ryhaa5CqhK3FjTfMRnb/s7HeLkKMFqwQySkK86cdN1TGdzpSM3O4tsmzCA1dYBeTbXvOwSE/Y42cUrvA==}
     dev: true
 
   /@microsoft/api-extractor-model/7.25.2:
