@@ -13,7 +13,7 @@
     "@lyonkit/bloks": "workspace:*",
     "@unocss/nuxt": "0.47.6",
     "nuxt": "3.0.0",
-    "vite": "3.2.5",
+    "vite": "4.0.1",
     "webpack": "5.75.0"
   }
 }
