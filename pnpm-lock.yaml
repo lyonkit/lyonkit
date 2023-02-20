@@ -1964,7 +1964,7 @@ packages:
     resolution: {integrity: sha512-Pg+F4UmYhI3Vz1Jio3bjCxEjuhvqlYrybwphsK2XacIDHYGQmcvBtMiB/5Y8Diuy1lGfHFloWaNjMuvAdh5gNA==}
     dependencies:
       hookable: 5.4.2
-      zhead: 2.0.2
+      zhead: 2.0.3
     dev: true
 
   /@unhead/shared/1.0.22:
@@ -8998,8 +8998,8 @@ packages:
       commander: 9.5.0
     dev: true
 
-  /zhead/2.0.2:
-    resolution: {integrity: sha512-a+Ye1MpwTpTSfJQnE6Rbc0P96fLLROpDHXowZwh8xwKyj+V3QFXkT1HKegLf1gBls9Eqj2IfyJvWwn7C9FuObQ==}
+  /zhead/2.0.3:
+    resolution: {integrity: sha512-egOeWn9UXz8wIYrEiJJG3u1Y3Y2xt1mJN17ZwZ+lSNEiRS7/WBxGo15Q/Rh3VQF12NyRssR4v7Eym7SnxpLHVQ==}
     dev: true
 
   /zip-stream/4.1.0:
