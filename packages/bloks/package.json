@@ -21,17 +21,17 @@
     "test": "vitest run"
   },
   "peerDependencies": {
-    "vue": "^3.2.45"
+    "vue": "^3.5.12"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "4.0.0",
-    "@vue/test-utils": "2.2.6",
-    "jsdom": "21.0.0",
-    "typescript": "5.0.2",
-    "vite": "4.0.1",
-    "vite-plugin-dts": "1.7.1",
-    "vitest": "0.25.7",
-    "vue": "3.2.45",
-    "vue-tsc": "1.0.13"
+    "@vitejs/plugin-vue": "4.6.2",
+    "@vue/test-utils": "2.4.6",
+    "jsdom": "21.1.2",
+    "typescript": "5.6.3",
+    "vite": "4.5.5",
+    "vite-plugin-dts": "1.7.3",
+    "vitest": "0.34.6",
+    "vue": "3.5.12",
+    "vue-tsc": "1.8.27"
   }
 }
