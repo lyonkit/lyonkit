@@ -8,12 +8,12 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
-    "@iconify/json": "2.1.151",
+    "@iconify/json": "2.2.263",
     "@leo91000/lyonkit-client": "1.10.1",
     "@lyonkit/bloks": "workspace:*",
-    "@unocss/nuxt": "0.47.6",
-    "nuxt": "3.0.0",
-    "vite": "4.0.1",
-    "webpack": "5.75.0"
+    "@unocss/nuxt": "0.63.6",
+    "nuxt": "3.13.2",
+    "vite": "4.5.5",
+    "webpack": "5.95.0"
   }
 }

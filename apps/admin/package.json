@@ -14,21 +14,21 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@headlessui/vue": "1.7.5",
-    "@iconify/json": "2.1.151",
+    "@headlessui/vue": "1.7.23",
+    "@iconify/json": "2.2.263",
     "@leo91000/lyonkit-client": "1.10.1",
     "@lyonkit/bloks": "workspace:*",
     "@lyonkit/nuxt": "workspace:*",
-    "@mdi/js": "^7.1.96",
-    "@types/lodash-es": "4.17.6",
-    "@vueuse/nuxt": "10.7.1",
+    "@mdi/js": "^7.4.47",
+    "@types/lodash-es": "4.17.12",
+    "@vueuse/nuxt": "10.11.1",
     "lodash-es": "4.17.21",
-    "nuxt": "3.0.0",
-    "sass": "^1.56.2",
-    "vite": "4.0.1",
-    "vitest": "0.25.7",
-    "vue": "3.2.45",
-    "vuetify": "3.0.4",
-    "webpack": "5.75.0"
+    "nuxt": "3.13.2",
+    "sass": "^1.80.4",
+    "vite": "4.5.5",
+    "vitest": "0.34.6",
+    "vue": "3.5.12",
+    "vuetify": "3.7.3",
+    "webpack": "5.95.0"
   }
 }
