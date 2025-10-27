@@ -6,7 +6,7 @@
   "description": "Monorepo starter that feature page building CMS",
   "author": "Léo Coletta <leo.coletta@pm.me>",
   "volta": {
-    "node": "18.12.1",
+    "node": "22.21.0",
     "npm": "9.2.0"
   },
   "scripts": {
